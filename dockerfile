@@ -1,4 +1,5 @@
-FROM centos:7
-RUN touch /root/file.txt
-ADD shell-script.sh /root/
-CMD["/root/shell-script.sh"]
+FROM centos:latest
+RUN touch /root/mydata.txt
+ADD shellscript.sh /root/
+RUN chmod +x /root/shellscript.sh
+RUN sh /root/shellscript.sh

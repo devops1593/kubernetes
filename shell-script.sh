@@ -1,2 +1,3 @@
+
 #!/bin/bash
-echo "Hello World">/root/file.txt
+echo "Hello World">/root/mydata.txt
